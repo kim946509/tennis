@@ -98,8 +98,8 @@ h6 {
 }
 
 .above-heading {
-	color: #5f4dee;
-	font: 700 0.75rem/0.875rem "Open Sans", sans-serif;
+	color: gray;
+	font: 700 1.6rem/0.875rem "Open Sans", sans-serif;
 	text-align: center;
 }
 
@@ -924,13 +924,32 @@ screen and (-ms-high-contrast: none) {
 /*     06. Description     */
 /***************************/
 .cards-1 {
-	padding-top: 3.25rem;
+	padding-top: 5.25rem;
 	padding-bottom: 3rem;
 	text-align: center;
+	height: 820px;
+	background-image: url('../images/solution.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100% 820px;
 }
 
 .cards-1 .h2-heading {
 	margin-bottom: 3.5rem;
+	margin-top: 3rem;
+	font: 696 3.5rem/2.625rem "Open Sans", sans-serif
+}
+
+.background-image {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	/* 비율을 유지하며 섹션을 채움 */
+	z-index: -1;
+	/* 텍스트 콘텐츠 뒤로 배치 */
 }
 
 .cards-1 .card {

@@ -900,6 +900,12 @@ screen and (-ms-high-contrast: none) {
 	height: 2.25rem;
 }
 
+.logo-image {
+	width: 110px;
+	/* 원하는 너비 */
+	height: auto;
+	/* 비율 유지 */
+}
 
 /*************************/
 /*     05. Customers     */

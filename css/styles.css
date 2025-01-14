@@ -861,6 +861,7 @@ screen and (-ms-high-contrast: none) {
 	color: #fff;
 	font-size: 2.5rem;
 	line-height: 3rem;
+	padding-left: 20px;
 }
 
 .header .p-large {
@@ -2079,8 +2080,8 @@ a:hover.back-to-top {
 
 	/* Header */
 	.header .header-content {
-		padding-top: 11rem;
-		padding-bottom: 5rem;
+		padding-top: 23rem;
+		padding-bottom: 10rem;
 	}
 
 	.header .text-container {

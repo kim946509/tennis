@@ -869,6 +869,7 @@ screen and (-ms-high-contrast: none) {
 
 .header .text-container {
 	margin-bottom: 3rem;
+	margin-top: 8rem;
 }
 
 .header h1 {
@@ -945,7 +946,8 @@ screen and (-ms-high-contrast: none) {
 	background-image: url('../images/solution.png');
 	background-repeat: no-repeat;
 	background-position: center;
-	background-size: 100% 85vh;
+	background-size: 100% 35%;
+	background-color: #e5e5e5;
 }
 
 .cards-1 .h2-heading {
@@ -1866,6 +1868,10 @@ a:hover.back-to-top {
 
 
 	/* Header */
+	.header {
+		min-height: auto;
+	}
+
 	.header .text-container {
 		margin-bottom: 4rem;
 	}
@@ -1873,6 +1879,7 @@ a:hover.back-to-top {
 	.header h1 {
 		font-size: 3.5rem;
 		line-height: 4.125rem;
+
 	}
 
 	.header .btn-solid-lg {
@@ -1886,6 +1893,13 @@ a:hover.back-to-top {
 
 	/* end of header */
 
+	/* Solution */
+	.cards-1 {
+		min-height: 600px;
+	}
+
+	.cards-1
+	/* end of solution */
 
 	/* Testimonials */
 	.slider-2 .swiper-button-prev {

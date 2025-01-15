@@ -1,0 +1,93 @@
+body {
+    background-color: #121212;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* 3개의 동일한 열 */
+    gap: 20px;
+    max-width: 1200px;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.testimonial-card {
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.testimonial-card.tall {
+    height: 300px;
+    /* Tall 카드 */
+}
+
+.testimonial-card.large {
+    height: 400px;
+    /* Large 카드 */
+    grid-column: span 2;
+    /* 2개의 열을 차지 */
+}
+
+.testimonial-card.medium {
+    height: 250px;
+    /* Medium 카드 */
+}
+
+.testimonial-card.short {
+    height: 200px;
+    /* Short 카드 */
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.profile-pic {
+    width: 50px;
+    height: 50px;
+    background-color: #333333;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.profile-info {
+    text-align: left;
+}
+
+.name {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+blockquote {
+    font-style: italic;
+    font-size: 16px;
+    line-height: 1.5;
+    quotes: "“" "”";
+}
+
+blockquote:before {
+    content: open-quote;
+}
+
+blockquote:after {
+    content: close-quote;
+}

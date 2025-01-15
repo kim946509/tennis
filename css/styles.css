@@ -168,6 +168,20 @@ a.white {
 	text-decoration: none;
 }
 
+.btn-solid-expand {
+	display: inline-block;
+	padding: 1.1875rem 2.125rem 1.1875rem 2.125rem;
+	border: 0.125rem solid #5f4dee;
+	border-radius: 2rem;
+	background-color: #5f4dee;
+	color: #fff;
+	font: 700 0.875rem/0 "Open Sans", sans-serif;
+	text-decoration: none;
+	transition: all 0.2s;
+	width: 150px;
+	margin-top: 1.2rem;
+}
+
 .btn-solid-lg {
 	display: inline-block;
 	padding: 1.375rem 2.625rem 1.375rem 2.625rem;
@@ -843,7 +857,8 @@ screen and (-ms-high-contrast: none) {
 /*    04. Header     */
 /*********************/
 .header {
-	background-color: #5f4dee;
+	background-color: black;
+	min-height: 85vh;
 }
 
 .header .header-content {
@@ -927,11 +942,11 @@ screen and (-ms-high-contrast: none) {
 	padding-top: 5.25rem;
 	padding-bottom: 3rem;
 	text-align: center;
-	height: 820px;
+	min-height: 85vh;
 	background-image: url('../images/solution.png');
 	background-repeat: no-repeat;
 	background-position: center;
-	background-size: 100% 820px;
+	background-size: 100% 85vh;
 }
 
 .cards-1 .h2-heading {
@@ -1166,6 +1181,15 @@ screen and (-ms-high-contrast: none) {
 
 .basic-1 .text-container {
 	margin-bottom: 3.75rem;
+	margin-top: 3.75rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 100%;
+}
+
+.basic-1 .row {
+	align-items: center;
 }
 
 .basic-1 .list-unstyled {
@@ -1182,15 +1206,126 @@ screen and (-ms-high-contrast: none) {
 	margin-left: 0.625rem;
 }
 
+.basic-1 .logo-image {
+	width: 50px;
+	height: auto;
+	margin-bottom: 20px;
+}
+
+.basic-1 h1 {
+	line-height: 1.4;
+	margin-bottom: 20px;
+	color: #333333;
+}
+
+.basic-1 p {
+	font-size: 16px;
+	line-height: 1.6;
+	color: #666666;
+}
+
+.basic-1 .image-container {
+	text-align: center;
+}
+
+.basic-1 .image-container img.rounded-image {
+	border-radius: 15px;
+	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+	max-width: 100%;
+	height: auto;
+}
+
+.desc-wrapper {
+	max-height: 3rem;
+	/* 2줄의 높이 */
+	overflow: hidden;
+	transition: max-height 0.5s ease-in-out;
+	/* 부드러운 애니메이션 */
+}
+
+.more-info .less,
+.more-info.expand .more {
+	display: none;
+}
+
+.more-info.expand .less {
+	display: inline;
+}
+
+#details-2,
+#details-4 {
+	background-color: rgb(210, 210, 210);
+}
+
+/*********************/
+/*     10. Partner     */
+/*********************/
+.partners-section {
+	text-align: center;
+	padding: 1.25rem;
+}
+
+.partners-title {
+
+	margin-bottom: 2rem;
+}
+
+.partners-title h3 {
+	color: rgb(184, 184, 184);
+}
+
+.partners-grid {
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	gap: 1.25rem;
+	max-width: 75rem;
+	margin: 0 auto;
+}
+
+.partner {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0.625rem;
+	background-color: transparent;
+}
+
+.partner img {
+	max-width: 100%;
+	height: auto;
+	max-height: 3.125rem;
+}
+
+@media (max-width: 48rem) {
+
+	.partners-grid {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+
+@media (max-width: 30rem) {
+
+	.partners-grid {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
 
 /*********************/
 /*     10. Video     */
 /*********************/
 .basic-2 {
-	padding-top: 8rem;
+	padding-top: 5.25rem;
 	padding-bottom: 6.75rem;
 	background-color: #f3f7fd;
 	text-align: center;
+	min-height: 85vh;
+	background-color: #434c54;
+}
+
+.basic-2 .h2-heading {
+	color: #ededed;
+	margin-bottom: 3.5rem;
+	margin-top: 3.5rem;
 }
 
 .basic-2 .image-container {

@@ -1895,7 +1895,7 @@ a:hover.back-to-top {
 
 	/* Solution */
 	.cards-1 {
-		min-height: 600px;
+		background-size: 100% 85vh;
 	}
 
 	.cards-1

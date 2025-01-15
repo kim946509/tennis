@@ -1576,7 +1576,7 @@ screen and (-ms-high-contrast: none) {
 /**************************/
 .form {
 	padding-top: 4rem;
-	padding-bottom: 6rem;
+	padding-bottom: 4rem;
 }
 
 .form .text-container {
@@ -2418,3 +2418,8 @@ a:hover.back-to-top {
 }
 
 /* end of min-width width 1200px */
+
+/* Max-width 480px*/
+@media (max-width: 480px) {
+	/*  */
+}

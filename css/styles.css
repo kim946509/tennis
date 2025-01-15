@@ -99,7 +99,7 @@ h6 {
 
 .above-heading {
 	color: gray;
-	font: 700 1.6rem/0.875rem "Open Sans", sans-serif;
+	font: 700 1rem "Open Sans", sans-serif;
 	text-align: center;
 }
 
@@ -171,9 +171,9 @@ a.white {
 .btn-solid-expand {
 	display: inline-block;
 	padding: 1.1875rem 2.125rem 1.1875rem 2.125rem;
-	border: 0.125rem solid #5f4dee;
+	border: 0.125rem solid #52BABA;
 	border-radius: 2rem;
-	background-color: #5f4dee;
+	background-color: #52BABA;
 	color: #fff;
 	font: 700 0.875rem/0 "Open Sans", sans-serif;
 	text-decoration: none;
@@ -730,8 +730,8 @@ screen and (-ms-high-contrast: none) {
 }
 
 .navbar-custom .navbar-brand.logo-image img {
-	width: 18.4375rem;
-	height: 3.75rem;
+	width: 12 .4375rem;
+	height: 2rem;
 }
 
 .navbar-custom .navbar-brand.logo-text {
@@ -951,8 +951,8 @@ screen and (-ms-high-contrast: none) {
 
 .cards-1 .h2-heading {
 	margin-bottom: 3.5rem;
-	margin-top: 3rem;
-	font: 696 3.5rem/2.625rem "Open Sans", sans-serif
+	margin-top: 2rem;
+	font: 696 2.5rem "Open Sans", sans-serif
 }
 
 .background-image {
@@ -1325,7 +1325,7 @@ screen and (-ms-high-contrast: none) {
 .basic-2 .h2-heading {
 	color: #ededed;
 	margin-bottom: 3.5rem;
-	margin-top: 3.5rem;
+	margin-top: 1.5rem;
 }
 
 .basic-2 .image-container {

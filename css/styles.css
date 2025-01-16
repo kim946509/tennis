@@ -877,7 +877,6 @@ screen and (-ms-high-contrast: none) {
 	color: #fff;
 	font-size: 2.5rem;
 	line-height: 3rem;
-	padding-left: 20px;
 }
 
 .header .p-large {
@@ -917,7 +916,7 @@ screen and (-ms-high-contrast: none) {
 }
 
 .logo-image {
-	width: 110px;
+	width: 75px;
 	/* 원하는 너비 */
 	height: auto;
 	/* 비율 유지 */
@@ -1213,8 +1212,7 @@ screen and (-ms-high-contrast: none) {
 	margin-bottom: 20px;
 }
 
-.basic-1 h1 {
-	line-height: 1.4;
+.basic-1 h2 {
 	margin-bottom: 20px;
 	color: #333333;
 }
@@ -1327,6 +1325,7 @@ screen and (-ms-high-contrast: none) {
 	color: #ededed;
 	margin-bottom: 3.5rem;
 	margin-top: 1.5rem;
+	font-size: 1.5rem;
 }
 
 .basic-2 .image-container {
@@ -1404,6 +1403,29 @@ screen and (-ms-high-contrast: none) {
 	border-top: 1rem solid transparent;
 	border-bottom: 1rem solid transparent;
 }
+
+/* 부모 컨테이너 */
+.video-wrapper {
+	position: relative;
+	width: 100%;
+	height: 0;
+	padding-bottom: 56.25%;
+	/* 16:9 비율 유지 (9/16 * 100) */
+	overflow: hidden;
+	/* 넘치는 부분 숨기기 */
+}
+
+.video-wrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border: none;
+	object-fit: cover;
+	/* 검은색 여백 제거 */
+}
+
 
 @keyframes pulse-border {
 	0% {
@@ -1879,7 +1901,7 @@ a:hover.back-to-top {
 	.header h1 {
 		font-size: 3.5rem;
 		line-height: 4.125rem;
-
+		padding-left: 3px;
 	}
 
 	.header .btn-solid-lg {
@@ -1891,15 +1913,18 @@ a:hover.back-to-top {
 		height: 5.5rem;
 	}
 
-	/* end of header */
-
-	/* Solution */
-	.cards-1 {
-		background-size: 100% 85vh;
+	.logo-image {
+		width: 95px;
 	}
 
-	.cards-1
-	/* end of solution */
+	/* end of header */
+
+	/* Products */
+	.basic-2 .h2-heading {
+		font-size: 2rem;
+	}
+
+	/* end of Products */
 
 	/* Testimonials */
 	.slider-2 .swiper-button-prev {
@@ -2072,6 +2097,15 @@ a:hover.back-to-top {
 
 	/* end of header */
 
+	/* Solution */
+	.cards-1 {
+		background-size: 100% 85vh;
+	}
+
+	/* Products */
+	.basic-2 .h2-heading {
+		width: 800px;
+	}
 
 	/* Description */
 	.cards-1 .card {
@@ -2417,9 +2451,11 @@ a:hover.back-to-top {
 	/* end of extra pages */
 }
 
-/* end of min-width width 1200px */
-
-/* Max-width 480px*/
-@media (max-width: 480px) {
-	/*  */
+@media (max-width: 992px) {
+	.details-reverse .row {
+		display: flex;
+		flex-direction: column-reverse;
+	}
 }
+
+/* end of min-width width 1200px */

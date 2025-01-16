@@ -708,8 +708,8 @@ pre code {
 .col-xl-auto {
   position: relative;
   width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 55px;
+  padding-left: 55px;
 }
 
 .col {
@@ -1391,7 +1391,7 @@ pre code {
   .col-lg-6 {
     -ms-flex: 0 0 50%;
     flex: 0 0 50%;
-    max-width: 50%;
+    max-width: 100%;
   }
 
   .col-lg-7 {
@@ -1597,7 +1597,6 @@ pre code {
   .col-xl-5 {
     -ms-flex: 0 0 41.666667%;
     flex: 0 0 41.666667%;
-    max-width: 58.666667%;
   }
 
   .col-xl-6 {

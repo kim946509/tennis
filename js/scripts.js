@@ -283,17 +283,13 @@
             if (target.length) {
                 $("html, body").animate(
                     {
-                        scrollTop: target.offset().top - $(".navbar").outerHeight(), // 네비게이션 높이만큼 보정
+                        scrollTop: target.offset().top - $(".navbar").outerHeight(),
                     },
-                    600, // 600ms 애니메이션 지속시간
+                    600,
                     "easeInOutExpo"
                 );
             }
         });
     });
-
-
-
-
 
 })(jQuery);

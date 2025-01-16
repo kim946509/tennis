@@ -1007,7 +1007,7 @@ screen and (-ms-high-contrast: none) {
 #solution-img {
 	margin: 0 auto;
 	width: 90%;
-	min-height: 240px;
+	min-height: 220px;
 }
 
 
@@ -2485,6 +2485,12 @@ a:hover.back-to-top {
 		display: flex;
 		flex-direction: column-reverse;
 	}
+
+	.cards-1 .col-lg-12 {
+		position: relative;
+		top: -32px;
+	}
 }
+
 
 /* end of min-width width 1200px */

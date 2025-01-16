@@ -2098,7 +2098,7 @@ a:hover.back-to-top {
 
 	/* Solution */
 	.cards-1 {
-		background-size: 100% 85vh;
+		background-size: 100% auto;
 	}
 
 	/* Products */

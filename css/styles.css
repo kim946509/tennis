@@ -99,7 +99,7 @@ h6 {
 
 .above-heading {
 	color: gray;
-	font: 700 1rem "Open Sans", sans-serif;
+	font: 700 1.2rem "Open Sans", sans-serif;
 	text-align: center;
 }
 
@@ -945,6 +945,12 @@ screen and (-ms-high-contrast: none) {
 	padding-top: 2.25rem;
 	padding-bottom: 2.25rem;
 	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	min-height: 75vh;
+	/* 세로 중앙 정렬 */
+	/* 세로 정렬 */
 	/* min-height: 400px; */
 	/* background-image: url('../images/solution.png');
 	background-repeat: no-repeat;
@@ -954,7 +960,8 @@ screen and (-ms-high-contrast: none) {
 }
 
 .cards-1 .h2-heading {
-	font: 696 2rem "Open Sans", sans-serif
+	font: 696 2rem "Open Sans", sans-serif;
+	margin-top: 1rem;
 }
 
 .background-image {
@@ -996,6 +1003,7 @@ screen and (-ms-high-contrast: none) {
 #solution-img {
 	margin: 0 auto;
 	width: 90%;
+	min-height: 300px;
 }
 
 
@@ -2109,9 +2117,8 @@ a:hover.back-to-top {
 
 	/* Solution */
 	.cards-1 {
-		background-size: 77% 80%;
 		padding-top: 4rem;
-		min-height: 85vh;
+		min-height: 75vh;
 	}
 
 	.cards-1 .h2-heading {

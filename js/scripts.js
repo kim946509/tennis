@@ -276,6 +276,22 @@
         });
     });
 
+    $(document).ready(function () {
+        $("a.page-scroll").on("click", function (event) {
+            event.preventDefault();
+            const target = $(this.getAttribute("href"));
+            if (target.length) {
+                $("html, body").animate(
+                    {
+                        scrollTop: target.offset().top - $(".navbar").outerHeight(), // 네비게이션 높이만큼 보정
+                    },
+                    600, // 600ms 애니메이션 지속시간
+                    "easeInOutExpo"
+                );
+            }
+        });
+    });
+
 
 
 

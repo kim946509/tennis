@@ -939,22 +939,21 @@ screen and (-ms-high-contrast: none) {
 
 
 /***************************/
-/*     06. Description     */
+/*     06. Solution     */
 /***************************/
 .cards-1 {
 	padding-top: 2.25rem;
 	padding-bottom: 3rem;
 	text-align: center;
-	min-height: 400px;
-	background-image: url('../images/solution.png');
+	/* min-height: 400px; */
+	/* background-image: url('../images/solution.png');
 	background-repeat: no-repeat;
 	background-position: center;
-	background-size: 85% 48%;
+	background-size: 85% 48%; */
 	background-color: #e5e5e5;
 }
 
 .cards-1 .h2-heading {
-	margin-bottom: 3.5rem;
 	font: 696 2rem "Open Sans", sans-serif
 }
 
@@ -992,6 +991,11 @@ screen and (-ms-high-contrast: none) {
 
 .cards-1 .card-body {
 	padding: 0;
+}
+
+#solution-img {
+	margin: 0 auto;
+	width: 90%;
 }
 
 

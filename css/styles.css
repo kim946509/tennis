@@ -721,7 +721,7 @@ screen and (-ms-high-contrast: none) {
 .navbar-custom {
 	background-color: black;
 	box-shadow: 0 0.0625rem 0.375rem 0 rgba(0, 0, 0, 0.1);
-	font: 700 1.575rem "Open Sans", sans-serif;
+	font: 700 1.475rem "Open Sans", sans-serif;
 	transition: all 0.2s;
 }
 
@@ -730,8 +730,8 @@ screen and (-ms-high-contrast: none) {
 }
 
 .navbar-custom .navbar-brand.logo-image img {
-	width: 11.4375rem;
-	height: 2.3rem;
+	width: 8rem;
+	height: 1.7rem;
 }
 
 .navbar-custom .navbar-brand.logo-text {

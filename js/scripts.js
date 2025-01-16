@@ -285,7 +285,7 @@
                     {
                         scrollTop: target.offset().top - $(".navbar").outerHeight(),
                     },
-                    600,
+                    800,
                     "easeInOutExpo"
                 );
             }

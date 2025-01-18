@@ -307,25 +307,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // 폼 제출 이벤트 처리
     function handleSubmit(event) {
-        event.preventDefault(); // 기본 폼 제출 동작 방지
-
-        // 서버로 데이터 전송
-        const formData = new FormData(form);
-        fetch(form.action, {
-            method: form.method,
-            body: formData
-        })
-            .then(response => {
-                if (response.ok) {
-                    showThankYouMessage(); // 감사 메시지 표시
-                } else {
-                    alert('There was an issue with the submission. Please try again.');
-                }
-            })
-            .catch(error => {
-                console.error('Error:', error);
-                alert('An error occurred. Please try again.');
-            });
+        showThankYouMessage();
     }
 
     // 감사 메시지 표시 함수

@@ -292,4 +292,53 @@
         });
     });
 
+
 })(jQuery);
+
+document.addEventListener('DOMContentLoaded', function () {
+    const form = document.querySelector('.gform');
+    const submitButton = document.getElementById('submitButton');
+
+    // 폼 유효성 검사 함수
+    function validateForm() {
+        // 폼의 모든 입력 요소가 유효한지 검사
+        submitButton.disabled = !form.checkValidity();
+    }
+
+    // 폼 제출 이벤트 처리
+    function handleSubmit(event) {
+        event.preventDefault(); // 기본 폼 제출 동작 방지
+
+        // 서버로 데이터 전송
+        const formData = new FormData(form);
+        fetch(form.action, {
+            method: form.method,
+            body: formData
+        })
+            .then(response => {
+                if (response.ok) {
+                    showThankYouMessage(); // 감사 메시지 표시
+                } else {
+                    alert('There was an issue with the submission. Please try again.');
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert('An error occurred. Please try again.');
+            });
+    }
+
+    // 감사 메시지 표시 함수
+    function showThankYouMessage() {
+        form.style.display = 'none'; // 폼 숨기기
+        document.querySelector('.thankyou_message').style.display = 'block'; // 감사 메시지 표시
+    }
+
+    // 입력 필드와 체크박스의 상태를 감시
+    form.addEventListener('input', validateForm);
+    form.addEventListener('change', validateForm);
+    form.addEventListener('submit', handleSubmit);
+
+    // 초기 상태 확인
+    validateForm();
+});

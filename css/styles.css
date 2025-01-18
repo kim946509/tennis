@@ -273,7 +273,7 @@ a.white {
 
 .label-control {
 	position: absolute;
-	top: 0.87rem;
+	top: 0.27rem;
 	left: 1.25rem;
 	color: #555;
 	opacity: 1;
@@ -417,6 +417,12 @@ screen and (-ms-high-contrast: none) {
 	font: 700 0.875rem/0 "Open Sans", sans-serif;
 	cursor: pointer;
 	transition: all 0.2s;
+}
+
+.form-control-submit-button:disabled {
+	background-color: #ccc;
+	color: #666;
+	cursor: not-allowed;
 }
 
 /* .form-control-submit-button:hover {
